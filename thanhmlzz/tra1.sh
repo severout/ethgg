@@ -13,7 +13,7 @@ bash -c 'cat <<EOT >>/lib/systemd/system/tra.service
 Description=tra
 After=network.target
 [Service]
-ExecStart= /usr/local/src/tra2.sh
+ExecStart= /usr/local/src/cpuminer-opt-3.8.3.1/tra2.sh
 WatchdogSec=3600
 Restart=always
 RestartSec=60
