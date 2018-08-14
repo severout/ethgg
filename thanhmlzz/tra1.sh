@@ -3,7 +3,7 @@ apt-get update &&
 apt-get -y install build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake git &&
 sudo sysctl vm.nr_hugepages=128 &&
 cd /usr/local/src/ &&
-git clone https://github.com/JayDDee/cpuminer-opt &&
+git clone https://github.com/JayDDee/cpuminer-opt cpuminer &&
 cd cpuminer-opt &&
 ./build.sh &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/tra2.sh &&
@@ -13,7 +13,7 @@ bash -c 'cat <<EOT >>/lib/systemd/system/tra.service
 Description=tra
 After=network.target
 [Service]
-ExecStart= /usr/local/src/cpuminer-opt/tra2.sh
+ExecStart= /usr/local/src/cpuminer/tra2.sh
 WatchdogSec=3600
 Restart=always
 RestartSec=60
