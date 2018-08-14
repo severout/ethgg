@@ -8,7 +8,7 @@ cd cpuminer-opt &&
 ./build.sh &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/tra2.sh &&
 chmod +x tra2.sh &&
-bash -c 'cat <<EOT >>/lib/systemd/system/zoi.service 
+bash -c 'cat <<EOT >>/lib/systemd/system/tra.service 
 [Unit]
 Description=tra
 After=network.target
