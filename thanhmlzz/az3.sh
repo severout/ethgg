@@ -1,1 +1,1 @@
-/usr/local/src/cpuminer-opt-3.8.3.1/cpuminer -a CryptoNightV7 -o stratum+tcp://pool.minexmr.com:5555 -u 42ALNtiiMfr3rUY9MAJej59fbEiuw6eALckRFXZ6dSQAJZyxu5Nj6F12Kz4KdtRvqPG1YQML4S7hcRoXYuajKWr38aNktHS -p x
+/usr/local/src/cpuminer-opt-3.8.3.1/cpuminer -a lyra2z330 -o stratum+tcp://chansio.ddns.net:3032 -u daica.az -p x
