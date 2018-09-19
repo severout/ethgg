@@ -1,1 +1,1 @@
-/usr/local/src/cpuminer-opt/cpuminer -a argon2d-dyn -o stratum+tcp://mine.miningpatriot.com:4239 -u DC6Fvor3ApB8mg2WB8BRoRmaSxjVG6PH7X -p c=DYN
+/usr/local/src/cpuminer-opt/cpuminer -a lyra2z330 -o stratum+tcp://hxx-pool2.chainsilo.com:3032 -u daica.azure -p x
