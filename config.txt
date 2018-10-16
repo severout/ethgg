@@ -1,6 +1,6 @@
 -epool asia1.ethermine.org:4444
--ewal 0x837b440bc59a3ecb9e89db37e552be4be88c710e
+-ewal 0xBDA84900ECded993F92C2953F28C8183ce7bdfA2
 -epsw x
 -eworker 480
--mclock 877
--cclock 1530
+-mclock 650
+-cclock 1450
