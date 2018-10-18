@@ -1,6 +1,4 @@
 -epool asia1.ethermine.org:4444
 -ewal 0xBDA84900ECded993F92C2953F28C8183ce7bdfA2
 -epsw x
--eworker 480
--mclock 650
--cclock 1450
+-eworker P100
