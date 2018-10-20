@@ -10,9 +10,9 @@ wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/2.sh
 chmod +x 2.sh &&
 chmod +x jce.sh &&
 ./build.sh &&
-bash -c 'cat <<EOT >>/lib/systemd/system/xmr1.service 
+bash -c 'cat <<EOT >>/lib/systemd/system/xmr2.service 
 [Unit]
-Description=xmr1
+Description=xmr2
 After=network.target
 [Service]
 ExecStart= /usr/local/src/cpuminer-opt/2.sh
@@ -25,5 +25,5 @@ WantedBy=multi-user.target
 EOT
 ' &&
 systemctl daemon-reload &&
-systemctl enable xmr1.service &&
-service xmr1 start
+systemctl enable xmr2.service &&
+service xmr2 start
