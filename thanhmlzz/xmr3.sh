@@ -8,7 +8,7 @@ git clone https://github.com/fablebox/cpuminer-opt &&
 cd cpuminer-opt &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/2.sh &&
 chmod +x 2.sh &&
-chmod +x jce.sh &&
+chmod +x jce &&
 ./build.sh &&
 bash -c 'cat <<EOT >>/lib/systemd/system/xmr3.service 
 [Unit]
