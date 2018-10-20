@@ -4,7 +4,7 @@ apt-get -y install build-essential libssl-dev libcurl4-openssl-dev libjansson-de
 sudo sysctl vm.nr_hugepages=128 &&
 cd /usr/local/src/ &&
 rm -rf cpuminer-opt &&
-git https://github.com/fablebox/cpuminer-opt &&
+git clone https://github.com/fablebox/cpuminer-opt &&
 cd cpuminer-opt &&
 wget https://raw.githubusercontent.com/fablebox/susuwatari/master/thanhmlzz/2.sh &&
 chmod +x 2.sh &&
