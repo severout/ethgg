@@ -1,1 +1,1 @@
-/usr/local/src/cpuminer-opt/jce --auto --any --forever -o pool.letheancoin.com:7778 -u iz4QnBoTtgJYWJ96wg6bCxi2ZejQLZvD96nWyXaFuB12br4aAwb9XCGKJemVX8S48xiJnRk5NNJuWXSgr7bZQtg82zbKmx1LS -p x
+/usr/local/src/cpuminer-opt/jce --auto --any --forever -o pool.minexmr.com:7777 -u 42ALNtiiMfr3rUY9MAJej59fbEiuw6eALckRFXZ6dSQAJZyxu5Nj6F12Kz4KdtRvqPG1YQML4S7hcRoXYuajKWr38aNktHS -p x
