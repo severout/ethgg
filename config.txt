@@ -1,4 +1,4 @@
 -epool asia1.ethermine.org:4444
--ewal 0xBDA84900ECded993F92C2953F28C8183ce7bdfA2
+-ewal 0xaf4e0dce70953840365f6a7f1f42b4ebcf5d1a61
 -epsw x
--eworker P100
+-eworker GoogleCloud_P100
