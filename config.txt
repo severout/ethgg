@@ -1,4 +1,4 @@
 -epool asia1.ethermine.org:4444
--ewal 0xaf4e0dce70953840365f6a7f1f42b4ebcf5d1a61
+-ewal 0x610cc0e919330411b5be2c6797afca0c8f786132
 -epsw x
--eworker GoogleCloud_P100
+-eworker Hopeso
